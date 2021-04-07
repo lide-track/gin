@@ -93,7 +93,7 @@ $ go get -u github.com/gin-gonic/gin
 2. Import it in your code:
 
 ```go
-import "github.com/gin-gonic/gin"
+import "gin"
 ```
 
 3. (Optional) Import `net/http`. This is required for example if using constants such as `http.StatusOK`.
@@ -112,7 +112,7 @@ $ cat example.go
 ```go
 package main
 
-import "github.com/gin-gonic/gin"
+import "gin"
 
 func main() {
 	r := gin.Default()
@@ -763,8 +763,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gin-gonic/gin"
-	"github.com/gin-gonic/gin/binding"
+	"gin"
+	"gin/binding"
 	"github.com/go-playground/validator/v10"
 )
 
@@ -830,7 +830,7 @@ package main
 import (
 	"log"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 type Person struct {
@@ -867,7 +867,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 type Person struct {
@@ -913,7 +913,7 @@ See the [detail information](https://github.com/gin-gonic/gin/issues/846).
 ```go
 package main
 
-import "github.com/gin-gonic/gin"
+import "gin"
 
 type Person struct {
 	ID string `uri:"id" binding:"required,uuid"`
@@ -947,7 +947,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 type testHeader struct {
@@ -1386,7 +1386,7 @@ import (
     "net/http"
     "time"
 
-    "github.com/gin-gonic/gin"
+    "gin"
 )
 
 func formatAsDate(t time.Time) string {
@@ -1608,7 +1608,7 @@ import (
 	"log"
 
 	"github.com/gin-gonic/autotls"
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 func main() {
@@ -1632,7 +1632,7 @@ import (
 	"log"
 
 	"github.com/gin-gonic/autotls"
-	"github.com/gin-gonic/gin"
+	"gin"
 	"golang.org/x/crypto/acme/autocert"
 )
 
@@ -1666,7 +1666,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -1782,7 +1782,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 func main() {
@@ -2016,7 +2016,7 @@ import (
 	"html/template"
 	"log"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 var html = template.Must(template.New("https").Parse(`
@@ -2069,7 +2069,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 func main() {
@@ -2101,7 +2101,7 @@ func main() {
 import (
     "fmt"
 
-    "github.com/gin-gonic/gin"
+    "gin"
 )
 
 func main() {
@@ -2139,7 +2139,7 @@ IPv6 CIDRs.
 import (
 	"fmt"
 
-	"github.com/gin-gonic/gin"
+	"gin"
 )
 
 func main() {
